@@ -12,6 +12,7 @@
     />
     <title>Add To Cart</title>
   </head>
+
   <body>
     <div class="content2">
       <div class="heading">
@@ -20,18 +21,16 @@
         <div class="line"></div>
       </div>
       <div class="content">
-        <div
-          class="expandable-box"
-          id="box1"
-          onclick="expandBox('box1'); "
-        >
+        <div class="expandable-box" id="box1" onclick="expandBox('box1'); ">
           <div class="details">
             <div class="accordion-item-name">
               <input type="radio" name="box-radio" id="radio1" />
               <div>
                 <div class="accordion-item-unit">
                   <h2 class="fw-600">1 Unit</h2>
-                  <div class="discount-detail"><h3>10% Off</h3></div>
+                  <div class="discount-detail">
+                    <h3>10% Off</h3>
+                  </div>
                 </div>
                 <h3 class="fw-400">Standard Price</h3>
               </div>
@@ -42,79 +41,94 @@
               <p class="price-scratch">$24.00 USD</p>
             </div>
           </div>
-          <div class="hidden-content"  id="content1">
-          <div class="hide">
-            <p>Size</p>
-            <p>Color</p>
-          </div>
-          <div>
-            <div class="drop">
-              <p class="no">#1</p>
-              <div class="dropdown" onclick="stopPropagation(event)">
-                <select class="drop3" name="cars" id="cars">
-                  <option value="volvo">S</option>
-                  <option value="saab">M</option>
-                  <option value="mercedes">L</option>
-                  <option value="audi">XL</option>
-                </select>
-                <select class="drop3" name="cars" id="cars">
-                  <option value="volvo">Black</option>
-                  <option value="saab">White</option>
-                  <option value="mercedes">Red</option>
-                  <option value="audi">Blue</option>
-                </select>
-              </div>
+          <div class="hidden-content" id="content1">
+            <div class="hide">
+              <p>Size</p>
+              <p>Color</p>
             </div>
-          </div>
-          <div class="drop" onclick="stopPropagation(event)">
-            <p class="no">#2</p>
-            <div class="dropdown">
-              <select class="drop3" name="cars" id="cars">
-                <option value="volvo">S</option>
-                <option value="saab">M</option>
-                <option value="mercedes">L</option>
-                <option value="audi">XL</option>
-              </select>
-              <select class="drop3" name="cars" id="cars">
-                <option value="volvo">Black</option>
-                <option value="saab">White</option>
-                <option value="mercedes">Red</option>
-                <option value="audi">Blue</option>
-              </select>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="expandable-box"
-        id="box2"
-        onclick="expandBox('box2'); "
-      >
-        <div class="details">
-          <div class="accordion-item-name">
-            <input type="radio" name="box-radio" id="radio1" />
             <div>
-              <div class="accordion-item-unit">
-                <h2 class="fw-600">2 Unit</h2>
-                <div class="discount-detail"><h3>10% Off</h3></div>
+              <div class="drop">
+                <p class="no">#1</p>
+                <div class="dropdown" onclick="stopPropagation(event)">
+                  <select class="drop3" name="cars" id="cars">
+                    <option value="volvo">S</option>
+                    <option value="saab">M</option>
+                    <option value="mercedes">L</option>
+                    <option value="audi">XL</option>
+                  </select>
+                  <select class="drop3" name="cars" id="cars">
+                    <option value="volvo">Black</option>
+                    <option value="saab">White</option>
+                    <option value="mercedes">Red</option>
+                    <option value="audi">Blue</option>
+                  </select>
+                </div>
               </div>
-              <h3 class="fw-400">Standard Price</h3>
+            </div>
+            <div class="drop" onclick="stopPropagation(event)">
+              <p class="no">#2</p>
+              <div class="dropdown">
+                <select class="drop3" name="cars" id="cars">
+                  <option value="volvo">S</option>
+                  <option value="saab">M</option>
+                  <option value="mercedes">L</option>
+                  <option value="audi">XL</option>
+                </select>
+                <select class="drop3" name="cars" id="cars">
+                  <option value="volvo">Black</option>
+                  <option value="saab">White</option>
+                  <option value="mercedes">Red</option>
+                  <option value="audi">Blue</option>
+                </select>
+              </div>
             </div>
           </div>
-          <div class="price">
-            <h3 >$18.00 USD</h3>
-            <p class="price-scratch">$24.00 USD</p>
-          </div>
         </div>
-        <div class="hidden-content" id="content3">
-          <div class="hide">
-            <p>Size</p>
-            <p>Color</p>
+        <div class="expandable-box" id="box2" onclick="expandBox('box2'); ">
+          <div class="details">
+            <div class="accordion-item-name">
+              <input type="radio" name="box-radio" id="radio1" />
+              <div>
+                <div class="accordion-item-unit">
+                  <h2 class="fw-600">2 Unit</h2>
+                  <div class="discount-detail">
+                    <h3>10% Off</h3>
+                  </div>
+                </div>
+                <h3 class="fw-400">Standard Price</h3>
+              </div>
+            </div>
+            <div class="price">
+              <h3>$18.00 USD</h3>
+              <p class="price-scratch">$24.00 USD</p>
+            </div>
           </div>
-          <div>
+          <div class="hidden-content" id="content3">
+            <div class="hide">
+              <p>Size</p>
+              <p>Color</p>
+            </div>
+            <div>
+              <div class="drop">
+                <p class="no">#1</p>
+                <div class="dropdown" onclick="stopPropagation(event)">
+                  <select class="drop3" name="cars" id="cars">
+                    <option value="volvo">S</option>
+                    <option value="saab">M</option>
+                    <option value="mercedes">L</option>
+                    <option value="audi">XL</option>
+                  </select>
+                  <select class="drop3" name="cars" id="cars">
+                    <option value="volvo">Black</option>
+                    <option value="saab">White</option>
+                    <option value="mercedes">Red</option>
+                    <option value="audi">Blue</option>
+                  </select>
+                </div>
+              </div>
+            </div>
             <div class="drop">
-              <p class="no">#1</p>
+              <p class="no">#2</p>
               <div class="dropdown" onclick="stopPropagation(event)">
                 <select class="drop3" name="cars" id="cars">
                   <option value="volvo">S</option>
@@ -131,113 +145,92 @@
               </div>
             </div>
           </div>
-          <div class="drop">
-            <p class="no">#2</p>
-            <div class="dropdown" onclick="stopPropagation(event)">
-              <select class="drop3" name="cars" id="cars">
-                <option value="volvo">S</option>
-                <option value="saab">M</option>
-                <option value="mercedes">L</option>
-                <option value="audi">XL</option>
-              </select>
-              <select class="drop3" name="cars" id="cars">
-                <option value="volvo">Black</option>
-                <option value="saab">White</option>
-                <option value="mercedes">Red</option>
-                <option value="audi">Blue</option>
-              </select>
+        </div>
+        <div class="expandable-box" id="box3" onclick="expandBox('box3'); ">
+          <div class="details">
+            <div class="accordion-item-name">
+              <input type="radio" name="box-radio" id="radio1" />
+              <div>
+                <div class="accordion-item-unit">
+                  <h2 class="fw-600">3 Unit</h2>
+                  <div class="discount-detail">
+                    <h3>10% Off</h3>
+                  </div>
+                </div>
+                <h3 class="fw-400">Standard Price</h3>
+              </div>
+            </div>
+            <div class="price">
+              <h3>$24.00 USD</h3>
+              <p class="price-scratch">$24.00 USD</p>
+            </div>
+          </div>
+          <div class="hidden-content" id="content3">
+            <div class="hide">
+              <p>Size</p>
+              <p>Color</p>
+            </div>
+            <div>
+              <div class="drop">
+                <p class="no">#1</p>
+                <div class="dropdown" onclick="stopPropagation(event)">
+                  <select class="drop3" name="cars" id="cars">
+                    <option value="volvo">S</option>
+                    <option value="saab">M</option>
+                    <option value="mercedes">L</option>
+                    <option value="audi">XL</option>
+                  </select>
+                  <select class="drop3" name="cars" id="cars">
+                    <option value="volvo">Black</option>
+                    <option value="saab">White</option>
+                    <option value="mercedes">Red</option>
+                    <option value="audi">Blue</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="drop">
+              <p class="no">#2</p>
+              <div class="dropdown" onclick="stopPropagation(event)">
+                <select class="drop3" name="cars" id="cars">
+                  <option value="volvo">S</option>
+                  <option value="saab">M</option>
+                  <option value="mercedes">L</option>
+                  <option value="audi">XL</option>
+                </select>
+                <select class="drop3" name="cars" id="cars">
+                  <option value="volvo">Black</option>
+                  <option value="saab">White</option>
+                  <option value="mercedes">Red</option>
+                  <option value="audi">Blue</option>
+                </select>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="expandable-box" id="box3"               onclick="expandBox('box3'); "
-      >
-        <div class="details">
-          <div class="accordion-item-name">
-            <input
-              type="radio"
-              name="box-radio"
-              id="radio1"
+        <div class="delevery-content">
+          <h2 class="delevery-content-color">Free Delivery</h2>
+          <h2>Total : $18.00 USD</h2>
+        </div>
+        <button class="button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="plus-sign"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 4.5v15m7.5-7.5h-15"
             />
-            <div>
-              <div class="accordion-item-unit">
-                <h2 class="fw-600">3 Unit</h2>
-                <div class="discount-detail"><h3>10% Off</h3></div>
-              </div>
-              <h3 class="fw-400">Standard Price</h3>
-            </div>
-          </div>
-          <div class="price">
-            <h3>$24.00 USD</h3>
-            <p class="price-scratch">$24.00 USD</p>
-          </div>
-        </div>
-        <div class="hidden-content" id="content3">
-          <div class="hide">
-            <p>Size</p>
-            <p>Color</p>
-          </div>
-          <div>
-            <div class="drop">
-              <p class="no">#1</p>
-              <div class="dropdown" onclick="stopPropagation(event)">
-                <select class="drop3" name="cars" id="cars">
-                  <option value="volvo">S</option>
-                  <option value="saab">M</option>
-                  <option value="mercedes">L</option>
-                  <option value="audi">XL</option>
-                </select>
-                <select class="drop3" name="cars" id="cars">
-                  <option value="volvo">Black</option>
-                  <option value="saab">White</option>
-                  <option value="mercedes">Red</option>
-                  <option value="audi">Blue</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="drop">
-            <p class="no">#2</p>
-            <div class="dropdown" onclick="stopPropagation(event)">
-              <select class="drop3" name="cars" id="cars">
-                <option value="volvo">S</option>
-                <option value="saab">M</option>
-                <option value="mercedes">L</option>
-                <option value="audi">XL</option>
-              </select>
-              <select class="drop3" name="cars" id="cars">
-                <option value="volvo">Black</option>
-                <option value="saab">White</option>
-                <option value="mercedes">Red</option>
-                <option value="audi">Blue</option>
-              </select>
-            </div>
-          </div>
-        </div>
+          </svg>
+          <h3>Add to Cart</h3>
+        </button>
       </div>
-      <div class="delevery-content">
-        <h2 class="delevery-content-color">Free Delivery</h2>
-        <h2 >Total : $18.00 USD</h2>
-      </div>
-      <button class="button">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="plus-sign"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M12 4.5v15m7.5-7.5h-15"
-          />
-        </svg>
-        <h3>Add to Cart</h3>
-      </button>
+      <script src="script.js"></script>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>

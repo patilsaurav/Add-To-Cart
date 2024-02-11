@@ -12,13 +12,168 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+.content2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.container {
+  height: 100vh;
+  flex-direction: column;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.line {
+  width: 7rem;
+  border-top: 0.9px solid var(--grey);
+}
+.content {
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
+  gap: 2rem;
+}
+.expandable-box {
+  cursor: pointer;
+  padding: 10px;
+  border: 0.9px solid rgba(200, 200, 200, 1);
+  background: rgba(255, 255, 255, 1);
+  margin: 10px;
+  transition: max-height 0.3s ease-out;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 341px;
+  max-height: 73px;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.accordion-item-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.accordion-item-unit {
+  display: flex;
+  gap: 0.5rem;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.discount-detail {
+  width: 55px;
+  border-radius: 1px;
+  background-color: var(--red);
+  color: var(--white);
+  text-align: center;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.price {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  font-size: 10px;
+  padding-right: 20px;
+}
+.price h3 {
+  margin: 0;
+  font-size: 14px;
+}
+.price p {
+  margin: 0;
+  text-decoration: line-through;
+}
+.price-scratch {
+  font-size: 10px;
+  opacity: 30%;
+}
+.hidden-content {
+  overflow: hidden;
+  margin-top: 10px;
+  padding: 2px;
+}
+.hide p {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  margin: 0;
+}
+.hide {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 186px;
+  padding-top: 5px;
+  margin: 0;
+}
+.drop {
+  display: flex;
+}
+.drop p {
+  margin: 0;
+}
+.no {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  color: #000000;
+}
+.dropdown {
+  display: flex;
+  gap: 10px;
+  margin: 5px;
+}
+.drop3 {
+  width: 65.98px;
+  border-radius: 1.81px;
+  border: 0.9px solid #d9d9d9;
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  background-color: var(--white);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.delevery-content {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-
+.delevery-content-color {
+  color: var(--red);
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  gap: 8px;
+  background-color: var(--red);
+  border: none;
+  color: var(--white);
+  width: 100%;
+  cursor: pointer;
+}
+.plus-sign {
+  height: 16px;
+}
 h1 {
   font-family: Inter;
   font-size: 20px;
@@ -50,132 +205,10 @@ small {
 .low-opacity {
   opacity: 0.33;
 }
-.fw-600 {
-  font-weight: 600;
-}
-.fw-400 {
-  font-weight: 400;
-}
-.fw-500 {
-  font-weight: 500;
-}
-.accordion-item-name {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.line {
-  width: 7rem;
-  border-top: 0.9px solid var(--grey);
-}
-.discount-detail {
-  width: 55px;
-  border-radius: 1px;
-  background-color: var(--red);
-  color: var(--white);
-  text-align: center;
-}
-.accordion-item-unit {
-  display: flex;
-  gap: 0.5rem;
-}
-.heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.expandable-box {
-  cursor: pointer;
-  padding: 10px;
-  border: 0.9px solid rgba(200, 200, 200, 1);
-  background: rgba(255, 255, 255, 1);
-  margin: 10px;
-  transition: max-height 0.3s ease-out;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  width: 341px;
-  max-height: 73px;
-}
-
-.details {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.unit {
-  display: flex;
-  flex-direction: column;
-  margin-right: 100px;
-  margin-top: 10px;
-}
-.price {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  font-size: 10px;
-  padding-right: 20px;
-}
-
-.unit h3 {
-  margin: 0;
-}
-.unit p {
-  margin: 0;
-}
-.price h3 {
-  margin: 0;
-  font-size: 14px;
-}
-.price p {
-  margin: 0;
-  text-decoration: line-through;
-}
-
-.drop {
-  display: flex;
-}
-.drop p {
-  margin: 0;
-}
-.dropdown {
-  display: flex;
-  gap: 10px;
-  margin: 5px;
-}
-.drop3 {
-  width: 65.98px;
-  border-radius: 1.81px;
-  border: 0.9px solid #d9d9d9;
-  font-family: Inter;
-  font-size: 11px;
-  font-weight: 400;
-  letter-spacing: 0em;
-  background-color: var(--white);
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-}
-.no {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  font-family: Inter;
-  font-size: 10px;
-  font-weight: 400;
-  letter-spacing: 0em;
-  color: #000000;
-}
 input[type="radio"] {
   filter: hue-rotate(140deg);
   cursor: pointer;
 }
-
 .expandable-box.selected {
   background-color: var(--off_white);
   border: 2px solid var(--red);
@@ -200,83 +233,4 @@ input[type="radio"] {
   background: var(--red);
   margin-right: 10px;
   margin-top: -8px;
-}
-.hidden-content {
-  overflow:hidden;
-  margin-top: 10px;
-  padding: 2px;;
-}
-.display-content {
-  display: flex;
-}
-.expanded {
-  height: 100px; /* Adjust the height as needed */
-}
-
-.content {
-  padding: 0 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.content2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: 100vh;
-  flex-direction: column;
-}
-.hide {
-  display: flex;
-  justify-content: space-evenly;
-  max-width: 186px;
-  padding-top: 5px;
-  margin: 0;
-}
-.hide p {
-  font-family: Inter;
-  font-size: 10px;
-  font-weight: 400;
-  letter-spacing: 0em;
-  margin: 0;
-}
-.flex {
-  display: flex;
-}
-.flex h3 {
-  margin-left: 10px;
-}
-.hidden-content {
-  max-height: 83px;
-  margin: 0px 22px 22px;
-}
-.delevery-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.delevery-content-color {
-  color: var(--red);
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  border-radius: 4px;
-  gap: 8px;
-  background-color: var(--red);
-  border: none;
-  color: var(--white);
-  width: 100%;
-  cursor: pointer;
-}
-.plus-sign {
-  height: 16px;
-}
-.price-scratch {
-  font-size: 10px;
-  opacity: 30%;
 }
